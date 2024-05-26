@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code of UAi components</title>
+    <style>
+        body{
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .code_box_1{
+            width: cover;
+            height: auto;
+            margin-top: 20px;
+        }
+  /* for desktop screen*/
+  @media (min-width:800px) {
+         
+         .code_main_box{
+         padding: 4px 10px;
+          display: flex;
+          justify-content: space-between;
+         }   
+         .html_code{
+             width: 30%;
+         }
+             }
+            .output_fram{
+                overflow: scroll;
+                width: 500px;
+                height: 300px;
+                background-image:radial-gradient( yellow,rgb(255, 0, 179),rgb(128, 0, 0));
+            }
+       
+        .navbar_textarea{
+            width: 90%;
+            height: 400px;
+        }
+        .navebar_box{
+            background-color:  rgb(148, 36, 36);
+        }
+        .tittle{
+            color: rgb(0, 255, 17);
+            text-shadow: 1px 1px rgb(255, 255, 255);
+        }
+        
+        .html_code{
+            background-color: rgb(148, 36, 36);
+            text-align: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+ <!--navebar code-->
+    <div class="code_box_1">
+   <div class="navebar_box"> <h1 class="tittle">NAVEBAR CODE</h1></div>
+   <iframe src="https://www.youtube.com/embed/GuXRpHl250c?si=3wnJ7dRFJNDmuSY3" class="output_fram" frameborder="0"></iframe>
+   <div class="code_main_box">
+   <div class="html_code">
+    <h1>HTML CODE</h1>
+    <textarea class="navbar_textarea" name="" id="">
+
+       " <div class="nav_box">
+        <nav class="nav1">
+            <div class="nav_box2">
+                <div class="logo"><span class="logo_clr1">UAi</span> <span class="logo_clr2"> Logo</span></div>
+                <div class="menubar1">
+                    <a class="nav_a" href="#">
+                        <div class="home_btn">HOME</div>
+                    </a>
+                    <a class="nav_a" href="#">
+                        <div class="home_btn">ABOUT</div>
+                    </a>
+                    <select name="Select" id="select">
+                        <option value="select_menu">SELECT MENU</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <a class="nav_a" href="#">
+                        <div class="home_btn">CONTACT</div>
+                    </a>
+                    <a class="nav_a" href="#">
+                        <div class="home_btn">OTHER</div>
+                    </a>
+                </div>
+            </div>
+            <div class="nav_box2">
+                <div class="search_bar">
+                  <button type="submit" class="src_btn" >  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg> </button>
+                    <input placeholder="Search" type="search" class="search_input">
+                </div>
+                <div class="login_logout">
+                    <a class="nav_a" href="#">
+                        <div class="">Login</div>
+                    </a>
+                    <a class="nav_a" href="#">
+                        <div class="">Logout</div>
+                    </a>
+                </div>
+                <div class="all_menu_btn">
+                    <svg id="all_menu_btn" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-grid" viewBox="0 0 16 16">
+                        <path
+                            d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <!--start small screen code-->
+        <div class="all_menu" hidden id="all_menu_height">
+            <div class="menubar2">
+                <a class="nav_a" href="#">
+                    <div class="home_btn">HOME</div>
+                </a>
+                <a class="nav_a" href="#">
+                    <div class="home_btn">ABOUT</div>
+                </a>
+                <select name="Select" id="select2">
+                    <option value="select_menu">SELECT</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <a class="nav_a" href="#">
+                    <div class="home_btn">CONTACT</div>
+                </a>
+                <a class="nav_a" href="#">
+                    <div class="home_btn">OTHER</div>
+                </a>
+            </div>
+        </div>
+    </div>  "
+    </textarea>
+</div>
+<!--css code of navebar-->
+<div class="html_code">
+    <h1>CSS CODE</h1>
+    <textarea class="navbar_textarea" name="" id="">
+
+       " * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-color: rgb(206, 209, 209);
+        }
+
+        .nav_box {
+
+            width: 100%;
+            height: auto;
+            place-content: center;
+            place-items: center;
+            background-color: #24990a;
+            overflow-x: hidden;
+        }
+
+        .nav1 {
+            width: cover;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+
+        }
+
+        .nav_box2 {
+            width: cover;
+            margin: 1px;
+            display: flex;
+            place-content: start;
+            place-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            padding: 2px 2px;
+            font-size: x-large;
+            font-weight: 600;
+            margin-right: 10px;
+            display: flex;
+        }
+
+        .logo_clr1 {
+            color: rgb(218, 94, 12);
+
+        }
+
+        .logo_clr2 {
+            margin-left: 2px;
+        }
+
+        .menubar1 {
+            display: flex;
+            place-items: center;
+            width: auto;
+            gap: 30px;
+            padding: 4px 10px;
+            font-weight: 500;
+
+        }
+
+        .nav_a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        #select {
+            font-size: large;
+            outline: none;
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+
+        .search_bar {
+            display: flex;
+            place-items: center;
+            color: white;
+        }
+
+        .search_input {
+            padding: 4px 6px;
+            outline: none;
+            background-color: transparent;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 4px;
+            margin-left: 4px;
+            color: white;
+        }
+
+        .search_input::placeholder {
+            color: white;
+        }
+
+        .login_logout {
+            display: flex;
+            gap: 5px;
+        }
+        .src_btn{
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+
+        /* start small size screen css*/
+        .all_menu {
+            background-color: rgb(72, 189, 26);
+            overflow: hidden;
+            height: 0;
+            transition-duration: 10s ease-in-out;
+            width: cover;
+            padding: 10px;
+        }
+
+        .all_menu div,
+        .all_menu select {
+            margin-top: 10px;
+        }
+
+        .all_menu select {
+            margin-left: -5px;
+            padding: 0;
+            font-weight: 500;
+            font-size: medium;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: white;
+        }
+
+        option {
+            background-color: rgb(9, 169, 210);
+        }
+
+        /* over small size screen css*/
+        @media (max-width:1000px) {
+            .menubar1 {
+                display: none;
+            }
+
+            .login_logout {
+                display: none;
+            }
+
+            .all_menu_btn {
+                display: block;
+                color: white;
+            }
+        }
+
+        @media (min-width:1000px) {
+            .all_menu_btn {
+                display: none;
+            }
+
+        } "
+    </textarea>
+</div>
+
+<!--css code of navebar-->
+<div class="html_code">
+    <h1>JS CODE</h1>
+    <textarea class="navbar_textarea" name="" id="">
+
+       "   var all_menu_height = document.getElementById("all_menu_height");
+       let all_menu_btn = document.getElementById("all_menu_btn");
+       let all_menu_box = document.querySelector(".all_menu");
+       all_menu_btn.addEventListener("click", () => {
+           /*fow open menu */
+           if (all_menu_box.hidden) {
+               all_menu_box.hidden = false;
+               all_menu_height.style.height = "auto";
+           } else {
+               all_menu_box.hidden = true;
+           }
+       });
+
+       /*window screen size*/
+
+       window.addEventListener('resize', function () {
+           var window_size = window.innerWidth;
+           if (window_size >= 900) {
+               all_menu_box.hidden = true;
+           }
+       }, true);
+"
+    </textarea>
+</div>
+</div>
+</div>
+<!--big crousel code-->
+<div class="code_box_1">
+    <div class="navebar_box"> <h1 class="tittle">BIG CROUSEL CODE</h1></div>
+    <iframe src="" class="output_fram" frameborder="0"></iframe>
+    <div class="code_main_box">
+    <div class="html_code">
+     <h1>HTML CODE</h1>
+     <textarea class="navbar_textarea" name="" id=""> " 
+        <div class="crousel_main_box">
+            <div class="crousel_multi_img" onmouseover="c_mouse_over()" onmouseleave="c_mouse_leave()">
+                <img src="./crousel_imgs/1.jpeg" alt="" class="crousel_img_all active">
+                <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                    alt="" class="crousel_img_all">
+                <img src="https://static.vecteezy.com/system/resources/c_previews/000/523/378/original/web-development-application-design-coding-and-programming-on-laptop-and-smartphone-concept-with-programming-language-and-program-code-and-layout-on-screen-vector.jpg"
+                    alt="" class="crousel_img_all">
+                <img src="" alt="" class="crousel_img_all">
+            </div>
+            <button onmouseover="c_mouse_over()" onclick="c_next()" class="c_next">Next</button>
+            <button onmouseover="c_mouse_over()" onclick="c_pre()" class="c_pre">Pre</button>
+        </div>  " </textarea>
+ </div>
+ <!--css code of crousel-->
+ <div class="html_code">
+     <h1>CSS CODE</h1>
+     <textarea class="navbar_textarea" name="" id="">"
+       
+        .crousel_main_box {
+            width: 100%;
+            height: 300px;
+        }
+
+        .crousel_multi_img {
+            position: relative;
+            width: cover;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .crousel_img_all {
+            position: absolute;
+            width: 100%;
+            height: 300px;
+        }
+
+        .crousel_img_all:not(.active) {
+            top: 0;
+            left: -100%;
+        }
+
+        @keyframes c_next1 {
+            from {
+                left: 0%;
+
+            }
+
+            to {
+                left: -100%;
+            }
+        }
+
+        @keyframes c_next2 {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: 0%;
+            }
+        }
+
+        /* this is for c_pre*/
+        @keyframes c_pre1 {
+            from {
+                left: 0%;
+
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes c_pre2 {
+            from {
+                left: -100%;
+            }
+
+            to {
+                left: 0%;
+            }
+        }
+
+        /* btn css styles*/
+        .c_pre,
+        .c_next {
+            padding: 5px 20px;
+            border: hidden;
+            background-color: #fff;
+            margin-top: -160px;
+            position: absolute;
+            cursor: pointer;
+            font-size: medium;
+            font-weight: 600;
+        }
+
+        .c_pre:hover,
+        .c_next:hover {
+            background-color: rgb(216, 211, 211);
+        }
+
+        .c_pre:active,
+        .c_next:active {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .c_pre {
+            right: 10px;
+        }
+
+        .c_next {
+            left: 10px;
+        } 
+        "</textarea>
+ </div>
+ 
+ <!--js code of crousel-->
+ <div class="html_code">
+     <h1>JS CODE</h1>
+     <textarea class="navbar_textarea" name="" id="">" 
+        /* this is use for variables*/
+        var multi_imgcc = document.querySelectorAll(".crousel_img_all");
+        var count = 0;
+
+        /*auto slid function*/
+        function c_auto_slid() {
+            multi_imgcc[count].style.animation = 'c_next1 1s linear forwards';
+            if (count < multi_imgcc.length - 1) {
+                count++;
+            } else {
+                count = 0;
+            }
+            multi_imgcc[count].style.animation = 'c_next2 1s linear forwards';
+        }
+
+        /*this is for c_previouse btn*/
+        function c_pre_slid() {
+            multi_imgcc[count].style.animation = 'c_pre1 1s linear forwards';
+            if (count > 0) {
+                count--;
+            } else {
+                count = multi_imgcc.length - 1;
+            }
+            multi_imgcc[count].style.animation = 'c_pre2 1s linear forwards';
+
+        }
+
+        /*this is c_loop use for  auto slide img crousel*/
+        function c_loop() {
+            c_interval = setInterval(c_call_fun, 3000);
+            function c_call_fun() {
+                c_auto_slid();
+            }
+        }
+        c_loop();
+        /* mouse hover and mouse leave function use for stop and run auto slider*/
+        function c_mouse_over() {
+            clearInterval(c_interval);
+        }
+        function c_mouse_leave() {
+            c_loop();
+        }
+        /*c_next c_pre function*/
+        function c_next() {
+            c_auto_slid();
+        }
+        function c_pre() {
+            c_pre_slid();
+        }  
+        "</textarea>
+ </div>
+ </div>
+ </div>
+
+ <!--multipal img crousel code-->
+
+ <div class="code_box_1">
+    <div class="navebar_box"> <h1 class="tittle">MULTI IMG CROUSEL CODE</h1></div>
+    <iframe src="" class="output_fram" frameborder="0"></iframe>
+    <div class="code_main_box">
+    <div class="html_code">
+     <h1>HTML CODE</h1>
+     <textarea class="navbar_textarea" name="" id=""> " 
+        <div class="multi_img_main_box">
+            <div class="multi_img_box" onmouseover="mouse_over()" onmouseleave="mouse_leave()">
+    
+                <div class="img_all_3 img_all active">
+                    <img src="./crousel_imgs/1.jpeg" alt="">
+                    <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                        alt="">
+                    <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                        alt="">
+                </div>
+    
+                <div class="img_all_3 img_all ">
+                    <img src="./crousel_imgs/1.jpeg" alt="">
+                    <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                        alt="">
+                    <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                        alt="">
+                </div>
+    
+                <div class="img_all_3 img_all ">
+                    <img src="./crousel_imgs/1.jpeg" alt="">
+                    <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                        alt="">
+                    <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                        alt="">
+                </div>
+    
+                <!--this is  for  small  screen-->
+                <img class="img_all_1 img_all active" src="./crousel_imgs/1.jpeg" alt="">
+                <img class="img_all_1 img_all "
+                    src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                    alt="">
+                <img class="img_all_1 img_all "
+                    src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                    alt="">
+    
+    
+            </div>
+            <button onmouseover="mouse_over()" onclick="next()" class="next">Next</button>
+            <button onmouseover="mouse_over()" onclick="pre()" class="pre">Pre</button>
+        </div>
+     
+        " </textarea>
+ </div>
+ 
+ <div class="html_code">
+     <h1>CSS CODE</h1>
+     <textarea class="navbar_textarea" name="" id="">"
+        .multi_img_main_box {
+            width: 100%;
+            height: 300px;
+        }
+
+        .multi_img_box {
+            position: relative;
+            background-color: red;
+            width: cover;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .img_all {
+            position: absolute;
+            width: 100%;
+            height: 300px;
+        }
+
+        .img_all:not(.active) {
+            top: 0;
+            left: -100%;
+        }
+
+        @keyframes next1 {
+            from {
+                left: 0%;
+
+            }
+
+            to {
+                left: -100%;
+            }
+        }
+
+        @keyframes next2 {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: 0%;
+            }
+        }
+
+        /* this is for pre*/
+        @keyframes pre1 {
+            from {
+                left: 0%;
+
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes pre2 {
+            from {
+                left: -100%;
+            }
+
+            to {
+                left: 0%;
+            }
+        }
+
+        /* btn css styles*/
+        .pre,
+        .next {
+            padding: 5px 20px;
+            border: hidden;
+            background-color: #fff;
+            margin-top: -160px;
+            position: absolute;
+            cursor: pointer;
+            font-size: medium;
+            font-weight: 600;
+        }
+
+        .pre:hover,
+        .next:hover {
+            background-color: rgb(216, 211, 211);
+        }
+
+        .pre:active,
+        .next:active {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .pre {
+            right: 10px;
+        }
+
+        .next {
+            left: 10px;
+        }
+
+        /*this is for big screen like desktop*/
+        @media (min-width:800px) {
+
+            .img_all_3{
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 300px;
+            }
+
+           .img_all_3 img{
+                width: 33.33%;
+                height: 100%;
+            }
+
+            .img_all {
+                display: flex;
+            }
+
+            .img_all_1 {
+                display: none;
+            }
+        }
+
+        @media (max-width:800px) {
+            .img_all_3{
+                display: none;
+            }
+
+            .img_all_1{
+                display: block;
+            }
+        }
+        "</textarea>
+ </div>
+ 
+ 
+ <div class="html_code">
+     <h1>JS CODE</h1>
+     <textarea class="navbar_textarea" name="" id="">" 
+        /*window screen size*/
+        let multi_img;
+            window.addEventListener('resize', function () {
+                    var window_size = window.innerWidth;
+                    if (window_size >= 800) {
+                        multi_img = document.querySelectorAll(".img_all_3");
+               
+                    }else{
+                        multi_img = document.querySelectorAll(".img_all_1");
+                    }
+                }, true);
+        
+        
+                /* this is use for variables*/
+                // var multi_img = document.querySelectorAll(".img_all_3");
+                var count = 0;
+        
+                /*auto slid function*/
+                function auto_slid() {
+        
+                    multi_img[count].style.animation = 'next1 1s linear forwards';
+                    if (count < multi_img.length - 1) {
+                        count++;
+                    } else {
+                        count = 0;
+                    }
+                    multi_img[count].style.animation = 'next2 1s linear forwards';
+                }
+        
+                /*this is for previouse btn*/
+                function pre_slid() {
+                    multi_img[count].style.animation = 'pre1 1s linear forwards';
+                    if (count > 0) {
+                        count--;
+                    } else {
+                        count = multi_img.length - 1;
+                    }
+                    multi_img[count].style.animation = 'pre2 1s linear forwards';
+        
+                }
+        
+                /*this is loop use for  auto slide img crousel*/
+                function loop() {
+                    interval = setInterval(call_fun, 3000);
+                    function call_fun() {
+                        auto_slid();
+                    }
+                }
+                loop();
+                /* mouse hover and mouse leave function use for stop and run auto slider*/
+                function mouse_over() {
+                    clearInterval(interval);
+                }
+                function mouse_leave() {
+                    loop();
+                }
+                /*next pre function*/
+                function next() {
+                    auto_slid();
+                }
+                function pre() {
+                    pre_slid();
+                }
+        "</textarea>
+ </div>
+ </div>
+ </div>
+
+
+ <!--btns code-->
+ <div class="code_box_1">
+    <div class="navebar_box"> <h1 class="tittle">BUTTONS CODE</h1></div>
+    <iframe src="" class="output_fram" frameborder="0"></iframe>
+    <div class="code_main_box">
+    <div class="html_code">
+     <h1>HTML CODE</h1>
+     <textarea class="navbar_textarea" name="" id=""> " 
+           <!--buttons code-->
+    <div class="all_btn_box">
+        <!--call btn 1-->
+        <a href="#" class="call_a">
+            <button class="call_btn" value="call" type="button">
+                <svg class="call_cdn" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
+                <span>Call</span></button>
+        </a>
+
+
+        <!--call btn 2-->
+        <a href="#" class="call_a2">
+            <button class="call_btn2" value="call" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                  </svg>
+                <span>WhatsApp</span></button>
+        </a>
+
+        <!--call btn 3-->
+        <a href="#" class="call_a3">
+            <button class="call_btn3" value="call" type="button">
+                <span>SUBMIT</span>
+            </button>
+        </a>
+    <!--call btn 4-->
+    <a href="#" class="call_a4">
+        <button class="call_btn4" value="call" type="button">
+            <span>SUCCES</span>
+        </button>
+    </a>
+  <!--call btn 5-->
+  <a href="#" class="call_a5">
+    <button class="call_btn5" value="INQUERY" type="button">
+        <span>INQUERY</span>
+    </button>
+</a>
+ <!--call btn 6-->
+ <a href="#" class="call_a6">
+    <button class="call_btn6" value="offers" type="button">
+        <span>OFFERS</span>
+    </button>
+</a>
+
+<!--call btn 7-->
+<a href="#" class="call_a7">
+    <button class="call_btn7" value="click" type="button">
+        <span>CLICK ME</span>
+    </button>
+</a>
+
+<!--call btn 8-->
+<div class="input_box">
+    <svg id="search_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg>
+      <input type="search" value="developer" placeholder="Search Items .." name="search" class="search_input">
+</div>
+
+
+    </div>
+        " </textarea>
+ </div>
+ 
+ <div class="html_code">
+     <h1>CSS CODE</h1>
+     <textarea class="navbar_textarea" name="" id="">"
+        .all_btn_box {
+            width: fit-content;
+            height: auto;
+        }
+
+        /* call btn call*/
+        .call_btn {
+            background-color: rgb(128, 243, 14);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 50px;
+            font-size: large;
+            gap: 10px;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            text-shadow: 3px .5px rgb(255, 255, 255);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            box-shadow: 1px 2px 10px 1px black;
+            cursor: pointer;
+        }
+        .call_btn:active {
+            background-color: green;
+            color: white;
+            text-shadow: 3px 1px black;
+        }
+        .call_cdn {
+            color: rgb(0, 60, 255);
+        }
+        .call_a {
+            text-decoration: none;
+        }
+
+        /*call btn whatsapp*/
+
+        .call_btn2 {
+            background-color: rgb(148, 255, 42);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 50px;
+            font-size: large;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            text-shadow: 3px .5px rgb(255, 255, 255);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            gap: 10px;
+            box-shadow: 1px 0px 1px 1px black;
+            cursor: pointer;
+        }
+
+        .call_btn2:active {
+            background-color: green;
+            color: white;
+            text-shadow: 3px 1px black;
+        }
+        .call_cdn2 {
+            color: rgb(0, 60, 255);
+        }
+        .call_a2 {
+            text-decoration: none;
+        }
+
+        /*call btn submit*/
+
+        .call_btn3 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(17, 245, 203);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 50px;
+            font-size: large;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            text-shadow: 3px .5px rgb(255, 255, 255);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            box-shadow: 1px 0px 1px 1px black;
+            cursor: pointer;
+        }
+        .call_btn3:active {
+            background-color: rgb(0, 117, 128);
+            color: white;
+            text-shadow: 3px 1px black;
+        }
+        .call_a3 {
+            text-decoration: none;
+        }
+
+        /*call btn success*/
+
+        .call_btn4{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 8px;
+            background-color: rgb(245, 17, 104);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 50px;
+            font-size: large;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            text-shadow: 3px .5px rgb(0, 0, 0);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            box-shadow: 1px 0px 1px 1px black;
+            cursor: pointer;
+        }
+        .call_btn4:active {
+            background-color: rgb(116, 11, 67);
+            color: white;
+            text-shadow: 3px 1px black;
+        }
+        .call_a4 {
+            text-decoration: none;
+        }
+
+         /*call btn inquery*/
+
+         .call_btn5{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 8px;
+            background-color: rgb(221, 255, 0);
+            border:2px solid black;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 50px;
+            font-size: large;
+            color: rgb(255, 2, 2);
+            font-weight: 600;
+            text-shadow: 2px 1px rgb(19, 121, 254);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            cursor: pointer;
+        }
+        .call_btn5:active {
+            background-color: rgb(185, 220, 11);
+        }
+        .call_a5{
+            text-decoration: none;
+        }
+
+ /*call btn offers*/
+
+ .call_btn6{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            border-radius: 0px 50px;
+            background-color: rgb(255, 0, 225);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 40px;
+            font-size: large;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            text-shadow: 2px 1px rgb(0, 0, 0);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            cursor: pointer;
+        }
+        .call_btn6:active {
+            background-color: rgb(220, 11, 102);
+        }
+        .call_a6{
+            text-decoration: none;
+        }
+
+        /*call btn click*/
+
+ .call_btn7{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(170, 255, 0);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 40px;
+            font-size: large;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            text-shadow: 2px 1px rgb(255, 255, 255);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            cursor: pointer;
+        }
+        .call_btn7:active {
+            background-color: rgb(39, 220, 11);
+            box-shadow: 2px 0px 10px 1px black;
+            color: white;
+            text-shadow:1px 0.1px black;
+        }
+        .call_a7{
+            text-decoration: none;
+        }
+
+        /*search input btn*/
+        .input_box{
+            display: inline-flex;
+            place-items: center;
+            place-content: center;
+            padding: 2px 10px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: transparent;
+            gap: 10px;
+        }
+        .search_icon{
+            color: gray;
+        }
+        .search_input{
+            outline: none;
+            padding: 2px 4px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: medium;
+            font-weight: 400;
+            overflow-x: scroll;
+
+        }
+        "</textarea>
+ </div>
+ 
+ <!--css code of navebar-->
+ <div class="html_code">
+     <h1>JS CODE</h1>
+     <textarea class="navbar_textarea" name="" id="">" 
+        
+        "</textarea>
+ </div>
+ </div>
+ </div>
+
+ <!--gallery code-->
+ <div class="code_box_1">
+    <div class="navebar_box"> <h1 class="tittle">GALLERY CODE</h1></div>
+    <iframe src="" class="output_fram" frameborder="0"></iframe>
+    <div class="code_main_box">
+    <div class="html_code">
+     <h1>HTML CODE</h1>
+     <textarea class="navbar_textarea" name="" id=""> " 
+        <main class="galleryBox">
+      
+            <div class="img_box">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.AkWzYBkB409QQ7nLbDTh_wHaEK?rs=1&pid=ImgDetMain" alt="" class="gallery_img">
+        </div>
+        <div class="img_box">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.AkWzYBkB409QQ7nLbDTh_wHaEK?rs=1&pid=ImgDetMain" alt="" class="gallery_img">
+        </div>
+        <div class="img_box">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.AkWzYBkB409QQ7nLbDTh_wHaEK?rs=1&pid=ImgDetMain" alt="" class="gallery_img">
+        </div>
+        <div class="img_box">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.AkWzYBkB409QQ7nLbDTh_wHaEK?rs=1&pid=ImgDetMain" alt="" class="gallery_img">
+        </div>
+        <div class="img_box">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.AkWzYBkB409QQ7nLbDTh_wHaEK?rs=1&pid=ImgDetMain" alt="" class="gallery_img">
+        </div>
+        
+    </main>
+    
+        " </textarea>
+ </div>
+ <!--css code of navebar-->
+ <div class="html_code">
+     <h1>CSS CODE</h1>
+     <textarea class="navbar_textarea" name="" id="">"
+        .galleryBox{
+            place-content: center;
+            place-items: center;
+text-align: center;
+            
+        }
+         .gallery_img{
+            width: 100%;
+            height: auto;
+        } 
+        .img_box{
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            display: inline-block;
+            place-content: center;
+            place-items: center;
+            margin: 20px;
+        }
+        .img_box:hover{
+            box-shadow: 1px 0px 5px 0.1px black;
+        }
+        "</textarea>
+ </div>
+ 
+ <div class="html_code">
+     <h1>JS CODE</h1>
+     <textarea class="navbar_textarea" name="" id="">" 
+        
+        "</textarea>
+ </div>
+ </div>
+ </div>
+
+  <!--DOTS CROUSEL CODE-->
+  <div class="code_box_1">
+    <div class="navebar_box"> <h1 class="tittle">DOTS CROUSEL CODE</h1></div>
+    <iframe src="" class="output_fram" frameborder="0"></iframe>
+    <div class="code_main_box">
+    <div class="html_code">
+     <h1>HTML CODE</h1>
+     <textarea class="navbar_textarea" name="" id=""> " 
+        <div class="slide-container">
+	
+            <div class="slides">
+                <img src="image-1.jpg" class="active">
+                <img src="image-2.jpg">
+                <img src="image-3.jpg">
+                <img src="image-4.jpg">
+                <img src="image-5.jpg">
+            </div>
+        
+            <div class="buttons">
+                <span class="next">&#10095;</span>
+                <span class="prev">&#10094;</span>
+            </div>
+        
+            <div class="dotsContainer">
+                <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+                <div class="dot" attr='1' onclick="switchImage(this)"></div>
+                <div class="dot" attr='2' onclick="switchImage(this)"></div>
+                <div class="dot" attr='3' onclick="switchImage(this)"></div>
+                <div class="dot" attr='4' onclick="switchImage(this)"></div>
+            </div>
+        
+        </div>
+        
+        " </textarea>
+ </div>
+ <!--css code of navebar-->
+ <div class="html_code">
+     <h1>CSS CODE</h1>
+     <textarea class="navbar_textarea" name="" id="">"
+        *{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			width: 100%;
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #ede6d6;
+		}
+		.slide-container{
+			position: relative;
+			width: 800px;
+			height: 350px;
+			border: 3px solid #ede6d6;
+			box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
+		}
+		.slide-container .slides{
+			width: 100%;
+			height: calc(100% - 40px);
+			position: relative;
+			overflow: hidden;
+		}
+		.slide-container .slides img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			object-fit: cover;
+		}
+		.slide-container .slides img:not(.active){
+			top: 0;
+			left: -100%;
+		}
+		span.next, span.prev{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			padding: 14px;
+			color: #eee;
+			font-size: 24px;
+			font-weight: bold;
+			transition: 0.5s;
+			border-radius: 3px;
+			user-select: none;
+			cursor: pointer;
+			z-index: 1;
+		}
+		span.next{
+			right: 20px;
+		}
+		span.prev{
+			left: 20px;
+		}
+		span.next:hover, span.prev:hover{
+			background-color: #ede6d6;
+			opacity: 0.8;
+			color: #222;
+		} 
+		.dotsContainer{
+			position: absolute;
+			bottom: 5px;
+			z-index: 3;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.dotsContainer .dot{
+			width: 15px;
+			height: 15px;
+			margin: 0px 2px;
+			border: 3px solid #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			cursor: pointer;
+			transition: background-color 0.6s ease;
+		}
+		.dotsContainer .active{
+			background-color: #555;
+		}
+
+		@keyframes next1{
+			from{
+				left: 0%
+			}
+			to{
+				left: -100%;
+			}
+		}
+		@keyframes next2{
+			from{
+				left: 100%
+			}
+			to{
+				left: 0%;
+			}
+		}
+
+		@keyframes prev1{
+			from{
+				left: 0%
+			}
+			to{
+				left: 100%;
+			}
+		}
+		@keyframes prev2{
+			from{
+				left: -100%
+			}
+			to{
+				left: 0%;
+			}
+		}
+
+        "</textarea>
+ </div>
+ 
+ <div class="html_code">
+     <h1>JS CODE</h1>
+     <textarea class="navbar_textarea" name="" id="">" 
+        // Access the Images
+	let slideImages = document.querySelectorAll('img');
+	// Access the next and prev buttons
+	let next = document.querySelector('.next');
+	let prev = document.querySelector('.prev');
+	// Access the indicators
+	let dots = document.querySelectorAll('.dot');
+
+	var counter = 0;
+
+	// Code for next button
+	next.addEventListener('click', slideNext);
+	function slideNext(){
+	slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+	if(counter >= slideImages.length-1){
+		counter = 0;
+	}
+	else{
+		counter++;
+	}
+	slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+	indicators();
+	}
+
+	// Code for prev button
+	prev.addEventListener('click', slidePrev);
+	function slidePrev(){
+	slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+	if(counter == 0){
+		counter = slideImages.length-1;
+	}
+	else{
+		counter--;
+	}
+	slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+	indicators();
+	}
+
+	// Auto slideing
+	function autoSliding(){
+		deletInterval = setInterval(timer, 3000);
+		function timer(){
+			slideNext();
+			indicators();
+		}
+	}
+	autoSliding();
+
+	// Stop auto sliding when mouse is over
+	const container = document.querySelector('.slide-container');
+	container.addEventListener('mouseover', function(){
+		clearInterval(deletInterval);
+	});
+
+	// Resume sliding when mouse is out
+	container.addEventListener('mouseout', autoSliding);
+
+	// Add and remove active class from the indicators
+	function indicators(){
+		for(i = 0; i < dots.length; i++){
+			dots[i].className = dots[i].className.replace(' active', '');
+		}
+		dots[counter].className += ' active';
+		
+	}
+
+	// Add click event to the indicator
+	function switchImage(currentImage){
+		currentImage.classList.add('active');
+		var imageId = currentImage.getAttribute('attr');
+		if(imageId > counter){
+		slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+		counter = imageId;
+		slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+		}
+		else if(imageId == counter){
+			return;
+		}
+		else{
+		slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+		counter = imageId;
+		slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';	
+		}
+		indicators();
+	}
+        "</textarea>
+ </div>
+ </div>
+ </div>
+</body>
+</html>

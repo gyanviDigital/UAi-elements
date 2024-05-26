@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: cover;
+            gap: 30px;
+            display: grid;
+            place-items: center;
+        }
+
+        .all_btn_box {
+            width: fit-content;
+            height: auto;
+        }
+
+        /* call btn call*/
+        .call_btn {
+            background-color: rgb(128, 243, 14);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 50px;
+            font-size: large;
+            gap: 10px;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            text-shadow: 3px .5px rgb(255, 255, 255);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            box-shadow: 1px 2px 10px 1px black;
+            cursor: pointer;
+        }
+        .call_btn:active {
+            background-color: green;
+            color: white;
+            text-shadow: 3px 1px black;
+        }
+        .call_cdn {
+            color: rgb(0, 60, 255);
+        }
+        .call_a {
+            text-decoration: none;
+        }
+
+        /*call btn whatsapp*/
+
+        .call_btn2 {
+            background-color: rgb(148, 255, 42);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 50px;
+            font-size: large;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            text-shadow: 3px .5px rgb(255, 255, 255);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            gap: 10px;
+            box-shadow: 1px 0px 1px 1px black;
+            cursor: pointer;
+        }
+
+        .call_btn2:active {
+            background-color: green;
+            color: white;
+            text-shadow: 3px 1px black;
+        }
+        .call_cdn2 {
+            color: rgb(0, 60, 255);
+        }
+        .call_a2 {
+            text-decoration: none;
+        }
+
+        /*call btn submit*/
+
+        .call_btn3 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(17, 245, 203);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 50px;
+            font-size: large;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            text-shadow: 3px .5px rgb(255, 255, 255);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            box-shadow: 1px 0px 1px 1px black;
+            cursor: pointer;
+        }
+        .call_btn3:active {
+            background-color: rgb(0, 117, 128);
+            color: white;
+            text-shadow: 3px 1px black;
+        }
+        .call_a3 {
+            text-decoration: none;
+        }
+
+        /*call btn success*/
+
+        .call_btn4{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 8px;
+            background-color: rgb(245, 17, 104);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 50px;
+            font-size: large;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            text-shadow: 3px .5px rgb(0, 0, 0);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            box-shadow: 1px 0px 1px 1px black;
+            cursor: pointer;
+        }
+        .call_btn4:active {
+            background-color: rgb(116, 11, 67);
+            color: white;
+            text-shadow: 3px 1px black;
+        }
+        .call_a4 {
+            text-decoration: none;
+        }
+
+         /*call btn inquery*/
+
+         .call_btn5{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 8px;
+            background-color: rgb(221, 255, 0);
+            border:2px solid black;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 50px;
+            font-size: large;
+            color: rgb(255, 2, 2);
+            font-weight: 600;
+            text-shadow: 2px 1px rgb(19, 121, 254);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            cursor: pointer;
+        }
+        .call_btn5:active {
+            background-color: rgb(185, 220, 11);
+        }
+        .call_a5{
+            text-decoration: none;
+        }
+
+ /*call btn offers*/
+
+ .call_btn6{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            border-radius: 0px 50px;
+            background-color: rgb(255, 0, 225);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 40px;
+            font-size: large;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            text-shadow: 2px 1px rgb(0, 0, 0);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            cursor: pointer;
+        }
+        .call_btn6:active {
+            background-color: rgb(220, 11, 102);
+        }
+        .call_a6{
+            text-decoration: none;
+        }
+
+        /*call btn click*/
+
+ .call_btn7{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(170, 255, 0);
+            border: none;
+            text-align: center;
+            display: inline-flex;
+            padding: 10px 40px;
+            font-size: large;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            text-shadow: 2px 1px rgb(255, 255, 255);
+            place-content: center;
+            place-items: center;
+            margin: 5px 5px;
+            cursor: pointer;
+        }
+        .call_btn7:active {
+            background-color: rgb(39, 220, 11);
+            box-shadow: 2px 0px 10px 1px black;
+            color: white;
+            text-shadow:1px 0.1px black;
+        }
+        .call_a7{
+            text-decoration: none;
+        }
+
+        /*search input btn*/
+        .input_box{
+            display: inline-flex;
+            place-items: center;
+            place-content: center;
+            padding: 2px 10px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: transparent;
+            gap: 10px;
+        }
+        .search_icon{
+            color: gray;
+        }
+        .search_input{
+            outline: none;
+            padding: 2px 4px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: medium;
+            font-weight: 400;
+            overflow-x: scroll;
+
+        }
+</style>
+</head>
+
+<body>
+    <!--buttons code-->
+    <div class="all_btn_box">
+        <!--call btn 1-->
+        <a href="#" class="call_a">
+            <button class="call_btn" value="call" type="button">
+                <svg class="call_cdn" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
+                <span>Call</span></button>
+        </a>
+
+
+        <!--call btn 2-->
+        <a href="#" class="call_a2">
+            <button class="call_btn2" value="call" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                  </svg>
+                <span>WhatsApp</span></button>
+        </a>
+
+        <!--call btn 3-->
+        <a href="#" class="call_a3">
+            <button class="call_btn3" value="call" type="button">
+                <span>SUBMIT</span>
+            </button>
+        </a>
+    <!--call btn 4-->
+    <a href="#" class="call_a4">
+        <button class="call_btn4" value="call" type="button">
+            <span>SUCCES</span>
+        </button>
+    </a>
+  <!--call btn 5-->
+  <a href="#" class="call_a5">
+    <button class="call_btn5" value="INQUERY" type="button">
+        <span>INQUERY</span>
+    </button>
+</a>
+ <!--call btn 6-->
+ <a href="#" class="call_a6">
+    <button class="call_btn6" value="offers" type="button">
+        <span>OFFERS</span>
+    </button>
+</a>
+
+<!--call btn 7-->
+<a href="#" class="call_a7">
+    <button class="call_btn7" value="click" type="button">
+        <span>CLICK ME</span>
+    </button>
+</a>
+
+<!--call btn 8-->
+<div class="input_box">
+    <svg id="search_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg>
+      <input type="search" value="developer" placeholder="Search Items .." name="search" class="search_input">
+</div>
+
+
+    </div>
+</body>
+
+</html>

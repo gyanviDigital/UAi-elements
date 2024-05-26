@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-color: rgb(206, 209, 209);
+        }
+
+        .nav_box {
+
+            width: 100%;
+            height: auto;
+            place-content: center;
+            place-items: center;
+            background-color: #24990a;
+            overflow-x: hidden;
+        }
+
+        .nav1 {
+            width: cover;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+
+        }
+
+        .nav_box2 {
+            width: cover;
+            margin: 1px;
+            display: flex;
+            place-content: start;
+            place-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            padding: 2px 2px;
+            font-size: x-large;
+            font-weight: 600;
+            margin-right: 10px;
+            display: flex;
+        }
+
+        .logo_clr1 {
+            color: rgb(218, 94, 12);
+
+        }
+
+        .logo_clr2 {
+            margin-left: 2px;
+        }
+
+        .menubar1 {
+            display: flex;
+            place-items: center;
+            width: auto;
+            gap: 30px;
+            padding: 4px 10px;
+            font-weight: 500;
+
+        }
+
+        .nav_a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        #select {
+            font-size: large;
+            outline: none;
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+
+        .search_bar {
+            display: flex;
+            place-items: center;
+            color: white;
+        }
+
+        .search_input {
+            padding: 4px 6px;
+            outline: none;
+            background-color: transparent;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 4px;
+            margin-left: 4px;
+            color: white;
+        }
+
+        .search_input::placeholder {
+            color: white;
+        }
+
+        .login_logout {
+            display: flex;
+            gap: 5px;
+        }
+        .src_btn{
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+
+        /* start small size screen css*/
+        .all_menu {
+            background-color: rgb(72, 189, 26);
+            overflow: hidden;
+            height: 0;
+            transition-duration: 10s ease-in-out;
+            width: cover;
+            padding: 10px;
+        }
+
+        .all_menu div,
+        .all_menu select {
+            margin-top: 10px;
+        }
+
+        .all_menu select {
+            margin-left: -5px;
+            padding: 0;
+            font-weight: 500;
+            font-size: medium;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: white;
+        }
+
+        option {
+            background-color: rgb(9, 169, 210);
+        }
+
+        /* over small size screen css*/
+        @media (max-width:1000px) {
+            .menubar1 {
+                display: none;
+            }
+
+            .login_logout {
+                display: none;
+            }
+
+            .all_menu_btn {
+                display: block;
+                color: white;
+            }
+        }
+
+        @media (min-width:1000px) {
+            .all_menu_btn {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_box">
+        <nav class="nav1">
+            <div class="nav_box2">
+                <div class="logo"><span class="logo_clr1">UAi</span> <span class="logo_clr2"> Logo</span></div>
+                <div class="menubar1">
+                    <a class="nav_a" href="#">
+                        <div class="home_btn">HOME</div>
+                    </a>
+                    <a class="nav_a" href="#">
+                        <div class="home_btn">ABOUT</div>
+                    </a>
+                    <select name="Select" id="select">
+                        <option value="select_menu">SELECT MENU</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <a class="nav_a" href="#">
+                        <div class="home_btn">CONTACT</div>
+                    </a>
+                    <a class="nav_a" href="#">
+                        <div class="home_btn">OTHER</div>
+                    </a>
+                </div>
+            </div>
+            <div class="nav_box2">
+                <div class="search_bar">
+                  <button type="submit" class="src_btn" >  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg> </button>
+                    <input placeholder="Search" type="search" class="search_input">
+                </div>
+                <div class="login_logout">
+                    <a class="nav_a" href="#">
+                        <div class="">Login</div>
+                    </a>
+                    <a class="nav_a" href="#">
+                        <div class="">Logout</div>
+                    </a>
+                </div>
+                <div class="all_menu_btn">
+                    <svg id="all_menu_btn" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-grid" viewBox="0 0 16 16">
+                        <path
+                            d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <!--start small screen code-->
+        <div class="all_menu" hidden id="all_menu_height">
+            <div class="menubar2">
+                <a class="nav_a" href="#">
+                    <div class="home_btn">HOME</div>
+                </a>
+                <a class="nav_a" href="#">
+                    <div class="home_btn">ABOUT</div>
+                </a>
+                <select name="Select" id="select2">
+                    <option value="select_menu">SELECT</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <a class="nav_a" href="#">
+                    <div class="home_btn">CONTACT</div>
+                </a>
+                <a class="nav_a" href="#">
+                    <div class="home_btn">OTHER</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var all_menu_height = document.getElementById("all_menu_height");
+        let all_menu_btn = document.getElementById("all_menu_btn");
+        let all_menu_box = document.querySelector(".all_menu");
+        all_menu_btn.addEventListener("click", () => {
+            /*fow open menu */
+            if (all_menu_box.hidden) {
+                all_menu_box.hidden = false;
+                all_menu_height.style.height = "auto";
+            } else {
+                all_menu_box.hidden = true;
+            }
+        });
+
+        /*window screen size*/
+
+        window.addEventListener('resize', function () {
+            var window_size = window.innerWidth;
+            if (window_size >= 900) {
+                all_menu_box.hidden = true;
+            }
+        }, true);
+
+    </script>
+</body>
+
+</html>

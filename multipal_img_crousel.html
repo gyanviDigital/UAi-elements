@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto slider</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .multi_img_main_box {
+            width: 100%;
+            height: 300px;
+        }
+
+        .multi_img_box {
+            position: relative;
+            background-color: red;
+            width: cover;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .img_all {
+            position: absolute;
+            width: 100%;
+            height: 300px;
+        }
+
+        .img_all:not(.active) {
+            top: 0;
+            left: -100%;
+        }
+
+        @keyframes next1 {
+            from {
+                left: 0%;
+
+            }
+
+            to {
+                left: -100%;
+            }
+        }
+
+        @keyframes next2 {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: 0%;
+            }
+        }
+
+        /* this is for pre*/
+        @keyframes pre1 {
+            from {
+                left: 0%;
+
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes pre2 {
+            from {
+                left: -100%;
+            }
+
+            to {
+                left: 0%;
+            }
+        }
+
+        /* btn css styles*/
+        .pre,
+        .next {
+            padding: 5px 20px;
+            border: hidden;
+            background-color: #fff;
+            margin-top: -160px;
+            position: absolute;
+            cursor: pointer;
+            font-size: medium;
+            font-weight: 600;
+        }
+
+        .pre:hover,
+        .next:hover {
+            background-color: rgb(216, 211, 211);
+        }
+
+        .pre:active,
+        .next:active {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .pre {
+            right: 10px;
+        }
+
+        .next {
+            left: 10px;
+        }
+
+        /*this is for big screen like desktop*/
+        @media (min-width:800px) {
+
+            .img_all_3{
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 300px;
+            }
+
+           .img_all_3 img{
+                width: 33.33%;
+                height: 100%;
+            }
+
+            .img_all {
+                display: flex;
+            }
+
+            .img_all_1 {
+                display: none;
+            }
+        }
+
+        @media (max-width:800px) {
+            .img_all_3{
+                display: none;
+            }
+
+            .img_all_1{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="multi_img_main_box">
+        <div class="multi_img_box" onmouseover="mouse_over()" onmouseleave="mouse_leave()">
+
+            <div class="img_all_3 img_all active">
+                <img src="./crousel_imgs/1.jpeg" alt="">
+                <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                    alt="">
+                <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                    alt="">
+            </div>
+
+            <div class="img_all_3 img_all ">
+                <img src="./crousel_imgs/1.jpeg" alt="">
+                <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                    alt="">
+                <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                    alt="">
+            </div>
+
+            <div class="img_all_3 img_all ">
+                <img src="./crousel_imgs/1.jpeg" alt="">
+                <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                    alt="">
+                <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                    alt="">
+            </div>
+
+            <!--this is  for  small  screen-->
+            <img class="img_all_1 img_all active" src="./crousel_imgs/1.jpeg" alt="">
+            <img class="img_all_1 img_all "
+                src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                alt="">
+            <img class="img_all_1 img_all "
+                src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                alt="">
+
+
+        </div>
+        <button onmouseover="mouse_over()" onclick="next()" class="next">Next</button>
+        <button onmouseover="mouse_over()" onclick="pre()" class="pre">Pre</button>
+    </div>
+
+    <script>
+    /*window screen size*/
+let multi_img;
+    window.addEventListener('resize', function () {
+            var window_size = window.innerWidth;
+            if (window_size >= 800) {
+                multi_img = document.querySelectorAll(".img_all_3");
+       
+            }else{
+                multi_img = document.querySelectorAll(".img_all_1");
+            }
+        }, true);
+
+
+        /* this is use for variables*/
+        // var multi_img = document.querySelectorAll(".img_all_3");
+        var count = 0;
+
+        /*auto slid function*/
+        function auto_slid() {
+
+            multi_img[count].style.animation = 'next1 1s linear forwards';
+            if (count < multi_img.length - 1) {
+                count++;
+            } else {
+                count = 0;
+            }
+            multi_img[count].style.animation = 'next2 1s linear forwards';
+        }
+
+        /*this is for previouse btn*/
+        function pre_slid() {
+            multi_img[count].style.animation = 'pre1 1s linear forwards';
+            if (count > 0) {
+                count--;
+            } else {
+                count = multi_img.length - 1;
+            }
+            multi_img[count].style.animation = 'pre2 1s linear forwards';
+
+        }
+
+        /*this is loop use for  auto slide img crousel*/
+        function loop() {
+            interval = setInterval(call_fun, 3000);
+            function call_fun() {
+                auto_slid();
+            }
+        }
+        loop();
+        /* mouse hover and mouse leave function use for stop and run auto slider*/
+        function mouse_over() {
+            clearInterval(interval);
+        }
+        function mouse_leave() {
+            loop();
+        }
+        /*next pre function*/
+        function next() {
+            auto_slid();
+        }
+        function pre() {
+            pre_slid();
+        }
+    </script>
+</body>
+
+</html>

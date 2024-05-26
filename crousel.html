@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto slider</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .crousel_main_box {
+            width: 100%;
+            height: 300px;
+        }
+
+        .crousel_multi_imgcc {
+            position: relative;
+            width: cover;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .crousel_img_all {
+            position: absolute;
+            width: 100%;
+            height: 300px;
+        }
+
+        .crousel_img_all:not(.active) {
+            top: 0;
+            left: -100%;
+        }
+
+        @keyframes c_next1 {
+            from {
+                left: 0%;
+
+            }
+
+            to {
+                left: -100%;
+            }
+        }
+
+        @keyframes c_next2 {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: 0%;
+            }
+        }
+
+        /* this is for c_pre*/
+        @keyframes c_pre1 {
+            from {
+                left: 0%;
+
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes c_pre2 {
+            from {
+                left: -100%;
+            }
+
+            to {
+                left: 0%;
+            }
+        }
+
+        /* btn css styles*/
+        .c_pre,
+        .c_next {
+            padding: 5px 20px;
+            border: hidden;
+            background-color: #fff;
+            margin-top: -160px;
+            position: absolute;
+            cursor: pointer;
+            font-size: medium;
+            font-weight: 600;
+        }
+
+        .c_pre:hover,
+        .c_next:hover {
+            background-color: rgb(216, 211, 211);
+        }
+
+        .c_pre:active,
+        .c_next:active {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .c_pre {
+            right: 10px;
+        }
+
+        .c_next {
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="crousel_main_box">
+        <div class="crousel_multi_imgcc" onmouseover="c_mouse_over()" onmouseleave="c_mouse_leave()">
+            <img src="./crousel_imgs/1.jpeg" alt="" class="crousel_img_all active">
+            <img src="https://4.bp.blogspot.com/-rAAM9FMomxA/WD7OHiWdmKI/AAAAAAAAAF8/Qw1HQh8Z8Hw9-PxgjRvFE2uEKlHZCr1uwCLcB/s1600/depositphotos_33290907-Seo-web-development-concept-web.jpg"
+                alt="" class="crousel_img_all">
+            <img src="https://static.vecteezy.com/system/resources/c_previews/000/523/378/original/web-development-application-design-coding-and-programming-on-laptop-and-smartphone-concept-with-programming-language-and-program-code-and-layout-on-screen-vector.jpg"
+                alt="" class="crousel_img_all">
+            <img src="" alt="" class="crousel_img_all">
+        </div>
+        <button onmouseover="c_mouse_over()" onclick="c_next()" class="c_next">Next</button>
+        <button onmouseover="c_mouse_over()" onclick="c_pre()" class="c_pre">Pre</button>
+    </div>
+    <script>
+        /* this is use for variables*/
+        var multi_imgcc = document.querySelectorAll(".crousel_img_all");
+        var count = 0;
+
+        /*auto slid function*/
+        function c_auto_slid() {
+            multi_imgcc[count].style.animation = 'c_next1 1s linear forwards';
+            if (count < multi_imgcc.length - 1) {
+                count++;
+            } else {
+                count = 0;
+            }
+            multi_imgcc[count].style.animation = 'c_next2 1s linear forwards';
+        }
+
+        /*this is for c_previouse btn*/
+        function c_pre_slid() {
+            multi_imgcc[count].style.animation = 'c_pre1 1s linear forwards';
+            if (count > 0) {
+                count--;
+            } else {
+                count = multi_imgcc.length - 1;
+            }
+            multi_imgcc[count].style.animation = 'c_pre2 1s linear forwards';
+
+        }
+
+        /*this is c_loop use for  auto slide img crousel*/
+        function c_loop() {
+            c_interval = setInterval(c_call_fun, 3000);
+            function c_call_fun() {
+                c_auto_slid();
+            }
+        }
+        c_loop();
+        /* mouse hover and mouse leave function use for stop and run auto slider*/
+        function c_mouse_over() {
+            clearInterval(c_interval);
+        }
+        function c_mouse_leave() {
+            c_loop();
+        }
+        /*c_next c_pre function*/
+        function c_next() {
+            c_auto_slid();
+        }
+        function c_pre() {
+            c_pre_slid();
+        }
+    </script>
+</body>
+
+</html>
