@@ -23,7 +23,6 @@
 
         .multi_img_box {
             position: relative;
-            background-color: red;
             width: cover;
             height: 300px;
             overflow: hidden;
@@ -198,8 +197,17 @@
     <script>
     /*window screen size*/
 let multi_img;
+var window_size = window.innerWidth;
+if (window_size >= 800) {
+                multi_img = document.querySelectorAll(".img_all_3");
+       
+            }else{
+                multi_img = document.querySelectorAll(".img_all_1");
+            }
+
     window.addEventListener('resize', function () {
-            var window_size = window.innerWidth;
+          var window_size = window.innerWidth;
+    
             if (window_size >= 800) {
                 multi_img = document.querySelectorAll(".img_all_3");
        
